@@ -37,11 +37,11 @@ namespace projeto.domain.model
             return this._pricePerHour;
         }
 
-        public void SetVehicle(string placeCar) {
+        public void SetPlateCar(string placeCar) {
             this._plateCar = placeCar;
         }
 
-        public string? GetVehicle() {
+        public string? GetPlateCar() {
             return this._plateCar;
         }
 

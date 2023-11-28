@@ -25,14 +25,17 @@ namespace projeto.domain.service.serviceImpl
                 
         }
 
-        public string removeVehicle(double pricePerHour)
+        public string removeVehicle(string plateCar, double pricePerHour)
         {
-            
+            Parking parking = new Parking();
+            if(parking.GetPlateCar() == plateCar) {
+                double total = parking.GetPrice() * pricePerHour;
+                return $"Total price is {total}";
+            } else {
+                return "Plate incorrect";
+            }
         }
 
-        private Parking? GetParking() {
-            Parking parking = new Parking();
-            return parking;
-        }
+        
     }
 }
