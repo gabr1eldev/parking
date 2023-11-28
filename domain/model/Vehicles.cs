@@ -14,5 +14,12 @@ namespace projeto.domain.model
         public Vehicles(List<Object> vehicles) {
             this._vehicles = vehicles;
         }
-    }
+
+
+        public List<Object>? GetVehicles() {
+            return _vehicles;
+        }
+
+        
+    } 
 }
