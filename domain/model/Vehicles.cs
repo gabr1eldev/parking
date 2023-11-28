@@ -20,6 +20,13 @@ namespace projeto.domain.model
             return _vehicles;
         }
 
-        
+        public void AddVehicle(Object vehicle) {
+           this._vehicles?.Add(vehicle);
+           
+        }
+
+        public void removeVehicle(string plateCar) {
+            this._vehicles?.Remove(plateCar);
+        }
     } 
 }
