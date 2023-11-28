@@ -4,7 +4,7 @@ using System.Dynamic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace projeto.model
+namespace projeto.domain.model
 {
     public class Parking
     {
