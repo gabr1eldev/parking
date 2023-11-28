@@ -13,10 +13,10 @@ namespace projeto.model
 
         public Parking() {}
 
-        public Parking(double price, double pricePerHour, List<string> vehicle) {
+        public Parking(double price, double pricePerHour) {
             this._price = price;
             this._pricePerHour = pricePerHour;
-            this._vehicle = vehicle;
+            
         }
 
         public void SetPrice(double price) {
