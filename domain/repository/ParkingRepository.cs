@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace projeto.domain.model
+namespace projeto.domain.repository
 {
-    public class Vehicles
+    public class ParkingRepository
     {
         private List<Object>? _vehicles;
 
-        public Vehicles() {}
+        public ParkingRepository() {}
 
-        public Vehicles(List<Object> vehicles) {
+        public ParkingRepository(List<Object> vehicles) {
             this._vehicles = vehicles;
         }
 
