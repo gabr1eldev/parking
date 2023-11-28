@@ -14,7 +14,7 @@ namespace projeto.domain.service.serviceImpl
 
         public string addVehicle()
         {
-            throw new NotImplementedException();
+            
         }
 
         public List<Parking> listVehicle()

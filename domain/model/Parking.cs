@@ -11,6 +11,8 @@ namespace projeto.domain.model
         private  double _price; 
         private double _pricePerHour;
 
+        private List<string> _vehicles = new();
+
         public Parking() {}
 
         public Parking(double price, double pricePerHour) {
@@ -33,6 +35,14 @@ namespace projeto.domain.model
 
         public double GetPricePerHour() {
             return this._pricePerHour;
+        }
+
+        public void SetVehicle(List<string> placeCar) {
+            this._vehicles = placeCar;
+        }
+
+        public List<string> GetVehicle() {
+            return this._vehicles;
         }
 
     }
