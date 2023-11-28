@@ -2,31 +2,32 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using projeto.domain.model;
 
 namespace projeto.domain.repository
 {
-    public class ParkingRepository
+    public class ParkingRepository 
     {
-        private List<Object>? _vehicles;
+        private List<Parking>? _vehicles = new();
 
         public ParkingRepository() {}
 
-        public ParkingRepository(List<Object> vehicles) {
+        public ParkingRepository(List<Parking> vehicles) {
             this._vehicles = vehicles;
         }
 
 
-        public List<Object>? GetVehicles() {
-            return _vehicles;
+        public List<Parking>? GetVehicles() {
+            return this?._vehicles;
         }
 
-        public void AddVehicle(Object vehicle) {
+        public void AddVehicle(Parking vehicle) {
            this._vehicles?.Add(vehicle);
            
         }
 
-        public void removeVehicle(string plateCar) {
-            this._vehicles?.Remove(plateCar);
+        public void removeVehicle(Parking parking) {
+            this._vehicles?.Remove(parking);
         }
     } 
 }

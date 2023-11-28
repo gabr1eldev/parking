@@ -19,9 +19,9 @@ namespace projeto.domain.service.serviceImpl
             return $"Car {parking.GetVehicle()} add success!";
         }
 
-        public List<Parking> listVehicle()
+        public List<Parking>? listVehicle()
         {
-            throw new NotImplementedException();
+            return repository?.GetVehicles();
         }
 
         public string removeVehicle()
