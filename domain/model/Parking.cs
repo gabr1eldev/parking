@@ -15,9 +15,8 @@ namespace projeto.domain.model
 
         public Parking() {}
 
-        public Parking(double price, double pricePerHour, string plateCar) {
+        public Parking(double price, string plateCar) {
             this._price = price;
-            this._pricePerHour = pricePerHour;
             this._plateCar = plateCar;
             
         }
