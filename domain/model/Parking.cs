@@ -45,5 +45,9 @@ namespace projeto.domain.model
             return this._plateCar;
         }
 
+        internal object GetVehicle()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
