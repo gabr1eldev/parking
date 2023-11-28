@@ -10,7 +10,6 @@ namespace projeto.model
     {
         private  double _price; 
         private double _pricePerHour;
-        private List<string> _vehicle = new();
 
         public Parking() {}
 
