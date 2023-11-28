@@ -12,7 +12,7 @@ namespace projeto.domain.service.serviceImpl
 
         private ParkingRepository? repository;
 
-        public string addVehicle()
+        public string addVehicle(double price, double pricePerHour, string placeCar)
         {
             
         }

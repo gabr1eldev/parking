@@ -11,13 +11,14 @@ namespace projeto.domain.model
         private  double _price; 
         private double _pricePerHour;
 
-        private List<string> _vehicles = new();
+        private string _vehicles; 
 
         public Parking() {}
 
-        public Parking(double price, double pricePerHour) {
+        public Parking(double price, double pricePerHour, string vehicles) {
             this._price = price;
             this._pricePerHour = pricePerHour;
+            this._vehicles = vehicles;
             
         }
 
@@ -37,11 +38,11 @@ namespace projeto.domain.model
             return this._pricePerHour;
         }
 
-        public void SetVehicle(List<string> placeCar) {
+        public void SetVehicle(string placeCar) {
             this._vehicles = placeCar;
         }
 
-        public List<string> GetVehicle() {
+        public string GetVehicle() {
             return this._vehicles;
         }
 
