@@ -11,7 +11,7 @@ namespace projeto.domain.model
         private  double _price; 
         private double _pricePerHour;
 
-        private string _vehicles; 
+        private string? _vehicles; 
 
         public Parking() {}
 
