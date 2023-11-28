@@ -16,7 +16,7 @@ namespace projeto.domain.service.serviceImpl
         {
             Parking parking = new Parking(price , placeCar);
             repository?.AddVehicle(parking);
-            return $"Car {parking.GetVehicle()} add success!";
+            return $"Car {parking.GetPlateCar()} add success!";
         }
 
         public List<Parking>? listVehicle()
