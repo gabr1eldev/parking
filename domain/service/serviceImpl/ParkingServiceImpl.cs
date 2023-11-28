@@ -10,7 +10,7 @@ namespace projeto.domain.service.serviceImpl
     public class ParkingServiceImpl : ParkingService
     {
 
-        private ParkingRepository? repository;
+        private readonly ParkingRepository? repository;
 
         public string addVehicle(double price, string placeCar)
         {
@@ -22,11 +22,17 @@ namespace projeto.domain.service.serviceImpl
         public List<Parking>? listVehicle()
         {
             return repository?.GetVehicles();
+                
         }
 
-        public string removeVehicle()
+        public string removeVehicle(double pricePerHour)
         {
-            throw new NotImplementedException();
+            
+        }
+
+        private Parking? GetParking() {
+            Parking parking = new Parking();
+            return parking;
         }
     }
 }
