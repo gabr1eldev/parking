@@ -1,0 +1,5 @@
+C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\obj\Debug\net7.0\projeto.csproj.AssemblyReference.cache
+C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\obj\Debug\net7.0\projeto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\obj\Debug\net7.0\projeto.AssemblyInfoInputs.cache
+C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\obj\Debug\net7.0\projeto.AssemblyInfo.cs
+C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\obj\Debug\net7.0\projeto.csproj.CoreCompileInputs.cache

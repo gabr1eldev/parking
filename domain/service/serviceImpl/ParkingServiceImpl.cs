@@ -21,7 +21,10 @@ namespace projeto.domain.service.serviceImpl
 
         public List<Parking>? listVehicle()
         {
-            
+            foreach (var item in repository.GetVehicles())
+            {
+                return item;
+            }
         }
 
         public string removeVehicle(string plateCar, double pricePerHour)
