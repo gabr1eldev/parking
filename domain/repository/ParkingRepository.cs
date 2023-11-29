@@ -8,7 +8,7 @@ namespace projeto.domain.repository
 {
     public class ParkingRepository 
     {
-        private List<Parking>? _vehicles = new();
+        private readonly List<Parking>? _vehicles = new();
 
         public ParkingRepository() {}
 
@@ -17,8 +17,8 @@ namespace projeto.domain.repository
         }
 
 
-        public List<Parking>? GetVehicles() {
-            return this?._vehicles;
+        public List<Parking>? GetVehicles() {       
+            return this?._vehicles;        
         }
 
         public void AddVehicle(Parking vehicle) {

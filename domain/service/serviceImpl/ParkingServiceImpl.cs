@@ -10,19 +10,18 @@ namespace projeto.domain.service.serviceImpl
     public class ParkingServiceImpl : ParkingService
     {
 
-        private readonly ParkingRepository? repository;
+        private ParkingRepository? repository;
 
         public string addVehicle(double price, string placeCar)
         {
             Parking parking = new Parking(price , placeCar);
             repository?.AddVehicle(parking);
-            return $"Car {parking.GetPlateCar()} add success!";
+            return $"Car with plate {parking.GetPlateCar()} add success!";
         }
 
         public List<Parking>? listVehicle()
         {
-            return repository?.GetVehicles();
-                
+            
         }
 
         public string removeVehicle(string plateCar, double pricePerHour)
@@ -30,12 +29,13 @@ namespace projeto.domain.service.serviceImpl
             Parking parking = new Parking();
             if(parking.GetPlateCar() == plateCar) {
                 double total = parking.GetPrice() * pricePerHour;
+                repository?.removeVehicle(parking);
                 return $"Total price is {total}";
             } else {
                 return "Plate incorrect";
             }
         }
 
-        
+  
     }
 }
