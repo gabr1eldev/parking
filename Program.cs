@@ -61,9 +61,23 @@ namespace projeto
                         Console.WriteLine(listVehicle);
                         break;
                     }
+
+                    case 4:
+                    {
+                        Console.WriteLine("Bye!");
+                        break;
+                    }
+
+                    default:
+                    {
+                        Console.WriteLine("[1] - Add Plate");
+                        Console.WriteLine("[2] - Remove Plate");
+                        Console.WriteLine("[3] - List Plates");
+                        Console.WriteLine("[4] - Exit");
+                        break;
+                    }
                 }
             }
-
         }   
     }    
 }
