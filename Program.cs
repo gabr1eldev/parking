@@ -31,13 +31,12 @@ namespace projeto
                 {
                     case 1:
                     {
-                        Console.WriteLine("Fixed Price");
+                        Console.WriteLine("What the fixed price?");
                         var fixedPrice = int.Parse(Console.ReadLine());
                         Console.WriteLine("Plate car");
                         var plateCar = Console.ReadLine();
                         parking.SetPrice(fixedPrice);
                         parking.SetPlateCar(plateCar);
-
                         var result = service.addVehicle(parking);
                         Console.WriteLine(result);
                         break;
