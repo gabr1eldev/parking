@@ -8,7 +8,7 @@ namespace projeto.domain.service
 {
     public interface ParkingService
     {
-        public string addVehicle(double price, string plateCar);
+        public string addVehicle(Parking parking);
         public string removeVehicle(string plateCar, double pricePerHour);
         public List<Parking>? listVehicle();
     }
