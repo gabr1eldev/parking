@@ -54,6 +54,13 @@ namespace projeto
                         Console.WriteLine(result);
                         break;
                     }
+
+                    case 3:
+                    {
+                        var listVehicle = service.listVehicle();
+                        Console.WriteLine(listVehicle);
+                        break;
+                    }
                 }
             }
 
