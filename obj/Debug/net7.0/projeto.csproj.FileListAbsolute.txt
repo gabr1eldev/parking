@@ -3,3 +3,4 @@ C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\obj\Debug\net7.0\projeto.Generat
 C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\obj\Debug\net7.0\projeto.AssemblyInfoInputs.cache
 C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\obj\Debug\net7.0\projeto.AssemblyInfo.cs
 C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\obj\Debug\net7.0\projeto.csproj.CoreCompileInputs.cache
+C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\obj\Debug\net7.0\projeto.sourcelink.json

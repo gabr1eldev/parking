@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using projeto.domain.model;
@@ -21,10 +23,8 @@ namespace projeto.domain.service.serviceImpl
 
         public List<Parking>? listVehicle()
         {
-            foreach (var item in repository.GetVehicles())
-            {
-                return item;
-            }
+            return (List<Parking>?)(repository?.GetVehicles()?.Select(item => item));
+            
         }
 
         public string removeVehicle(string plateCar, double pricePerHour)

@@ -18,7 +18,8 @@ namespace projeto.domain.repository
 
 
         public List<Parking>? GetVehicles() {       
-            return this?._vehicles;        
+            
+            return this?._vehicles ?? null;        
         }
 
         public void AddVehicle(Parking vehicle) {
