@@ -36,9 +36,23 @@ namespace projeto
                         parking.SetPrice(fixedPrice);
                         #pragma warning disable CS8604 // Possible null reference argument.
                         parking.SetPlateCar(plateCar);
-                        service.addVehicle(parking);
+
+                        var result = service.addVehicle(parking);
+                        Console.WriteLine(result);
                         break;
                         
+                    }
+
+                    case 2:
+                    {
+                        Console.WriteLine("Plate car");
+                        var plateCar = Console.ReadLine();
+                        Console.WriteLine("Price per hour");
+                        var pricePerHour = int.Parse(Console.ReadLine());
+
+                        var result = service.removeVehicle(plateCar,pricePerHour);
+                        Console.WriteLine(result);
+                        break;
                     }
                 }
             }

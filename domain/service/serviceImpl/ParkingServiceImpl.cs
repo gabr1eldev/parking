@@ -1,9 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
 using projeto.domain.model;
 using projeto.domain.repository;
 
@@ -11,9 +6,9 @@ namespace projeto.domain.service.serviceImpl
 {
     public class ParkingServiceImpl : ParkingService
     {
-
-        private ParkingRepository? repository;
-
+        
+        ParkingRepository repository = new();
+        
         public string addVehicle(Parking parking)
         {
             repository?.AddVehicle(parking);
@@ -36,8 +31,6 @@ namespace projeto.domain.service.serviceImpl
             } else {
                 return "Plate incorrect";
             }
-        }
-
-  
+        } 
     }
 }
