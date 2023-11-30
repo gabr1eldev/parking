@@ -22,11 +22,7 @@ namespace projeto
             int option = int.Parse(Console.ReadLine());
             
             while (option != 4)
-            {
-                Console.WriteLine("[1] - Add Plate");
-                Console.WriteLine("[2] - Remove Plate");
-                Console.WriteLine("[3] - List Plates");
-                Console.WriteLine("[4] - Exit");
+            {               
                 switch (option)
                 {
                     case 1:
@@ -78,7 +74,10 @@ namespace projeto
                     }
                 }
 
-                
+            Console.WriteLine("[1] - Add Plate");
+            Console.WriteLine("[2] - Remove Plate");
+            Console.WriteLine("[3] - List Plates");
+            Console.WriteLine("[4] - Exit");    
             }
         }   
     }    
