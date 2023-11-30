@@ -3,11 +3,10 @@ using projeto.domain.model;
 using projeto.domain.repository;
 
 namespace projeto.domain.service.serviceImpl
-{
+{   
     public class ParkingServiceImpl : ParkingService
     {
-        
-        ParkingRepository repository = new();
+        private ParkingRepository repository = new();
         
         public string addVehicle(Parking parking)
         {

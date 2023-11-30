@@ -11,7 +11,11 @@ namespace projeto
             ParkingServiceImpl service = new();
             Parking parking = new();
 
-            Console.WriteLine("---------Wellcome to Parking!---------- \n");
+            Console.WriteLine("---------Wellcome to Parking!----------");
+            Console.WriteLine("[1] - Add Plate");
+            Console.WriteLine("[2] - Remove Plate");
+            Console.WriteLine("[3] - List Plates");
+            Console.WriteLine("[4] - Exit");
            
 
             #pragma warning disable CS8604 // Possible null reference argument.
@@ -27,14 +31,11 @@ namespace projeto
                 {
                     case 1:
                     {
-
                         Console.WriteLine("Fixed Price");
-                        #pragma warning disable CS8604 // Possible null reference argument.
                         var fixedPrice = int.Parse(Console.ReadLine());
                         Console.WriteLine("Plate car");
                         var plateCar = Console.ReadLine();
                         parking.SetPrice(fixedPrice);
-                        #pragma warning disable CS8604 // Possible null reference argument.
                         parking.SetPlateCar(plateCar);
 
                         var result = service.addVehicle(parking);
@@ -77,6 +78,8 @@ namespace projeto
                         break;
                     }
                 }
+
+                
             }
         }   
     }    
