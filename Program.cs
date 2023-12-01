@@ -18,11 +18,13 @@ namespace projeto
             Console.WriteLine("[4] - Exit");
            
 
-            #pragma warning disable CS8604 // Possible null reference argument.
-            int option = int.Parse(Console.ReadLine());
+            
+            int option = 0;
             
             while (option != 4)
-            {               
+            {        
+                #pragma warning disable CS8604 // Possible null reference argument.      
+                option = int.Parse(Console.ReadLine()); 
                 switch (option)
                 {
                     case 1:
@@ -35,8 +37,8 @@ namespace projeto
                         parking.SetPlateCar(plateCar);
                         var result = service.addVehicle(parking);
                         Console.WriteLine(result);
-                        break;
-                        
+                        break;           
+                               
                     }
 
                     case 2:
