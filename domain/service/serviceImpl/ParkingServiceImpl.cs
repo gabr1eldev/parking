@@ -19,17 +19,26 @@ namespace projeto.domain.service.serviceImpl
             return (List<Parking>?)(repository?.GetVehicles()?.Select(item => item));
             
         }
-
+      
         public string removeVehicle(string plateCar, double pricePerHour)
         {
-            Parking parking = new();
-            if(parking.GetPlateCar() == plateCar) {
-                double total = parking.GetPrice() * pricePerHour;
-                repository?.removeVehicle(parking);
-                return $"Total price is {total}";
-            } else {
-                return "Plate incorrect";
-            }
+            return repository.GetVehicles().Select(vehicle => {
+                #pragma warning disable CS8602 // Dereference of a possibly null reference.
+                if (vehicle.GetPlateCar().Contains(plateCar))
+                    {                     
+                        double total = vehicle.GetPrice() * pricePerHour;
+                        repository?.removeVehicle(vehicle);
+                        return $"Total price is {total}";
+                } else {
+                    return "Plate incorrect";
+                }
+            }).ToString();
         } 
+
+        private static Parking GetParking()
+        {
+            Parking parking = new();
+            return parking;
+        }
     }
 }

@@ -17,8 +17,6 @@ namespace projeto
             Console.WriteLine("[3] - List Plates");
             Console.WriteLine("[4] - Exit");
            
-
-            
             int option = 0;
             
             while (option != 4)
