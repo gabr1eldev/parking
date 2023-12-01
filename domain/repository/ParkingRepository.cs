@@ -27,8 +27,9 @@ namespace projeto.domain.repository
            
         }
 
-        public void removeVehicle(Parking parking) {
+        public string removeVehicle(Parking parking) {
             this._vehicles?.Remove(parking);
+            return "Success remove";
         }
     } 
 }

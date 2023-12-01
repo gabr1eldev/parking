@@ -6,8 +6,9 @@ namespace projeto.domain.service.serviceImpl
 {   
     public class ParkingServiceImpl : ParkingService
     {
-        private ParkingRepository repository = new();
         
+        ParkingRepository repository = new();
+
         public string addVehicle(Parking parking)
         {
             repository?.AddVehicle(parking);
@@ -25,7 +26,7 @@ namespace projeto.domain.service.serviceImpl
         {
 
             #pragma warning disable CS8602 // Dereference of a possibly null reference.
-            foreach (var vehicle in repository.GetVehicles())
+            foreach (var vehicle in repository.GetVehicles().ToList())
             {
                 if(vehicle.GetPlateCar().Equals(plateCar))
                 {
@@ -35,8 +36,6 @@ namespace projeto.domain.service.serviceImpl
                 } else {
                     Console.WriteLine("Plate incorrect");
                 }
-            }
-
             /*
             #pragma warning disable CS8603 // Possible null reference return.
             return repository.GetVehicles().Select(vehicle => {
@@ -51,6 +50,7 @@ namespace projeto.domain.service.serviceImpl
                 }
             }).ToString();
             */
+            }
         } 
 
         private static Parking GetParking()
