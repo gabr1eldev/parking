@@ -46,8 +46,7 @@ namespace projeto
                         Console.WriteLine("Price per hour");
                         var pricePerHour = int.Parse(Console.ReadLine());
 
-                        var result = service.removeVehicle(plateCar,pricePerHour);
-                        Console.WriteLine(result);
+                        service.removeVehicle(plateCar,pricePerHour);
                         break;
                     }
 
