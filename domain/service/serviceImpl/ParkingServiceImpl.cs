@@ -23,6 +23,7 @@ namespace projeto.domain.service.serviceImpl
       
         public string removeVehicle(string plateCar, double pricePerHour)
         {
+            #pragma warning disable CS8603 // Possible null reference return.
             return repository.GetVehicles().Select(vehicle => {
                 #pragma warning disable CS8602 // Dereference of a possibly null reference.
                 if (vehicle.GetPlateCar().Contains(plateCar))
@@ -34,6 +35,7 @@ namespace projeto.domain.service.serviceImpl
                     return "Plate incorrect";
                 }
             }).ToString();
+
         } 
 
         private static Parking GetParking()

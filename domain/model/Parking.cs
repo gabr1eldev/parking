@@ -52,7 +52,12 @@ namespace projeto.domain.model
             return this._plateCar;
         }
 
-        
+        public override string ToString()
+        {
+            #pragma warning disable CS8603 // Possible null reference return.
+            return base.ToString();
+
+        }
 
     }
 }
