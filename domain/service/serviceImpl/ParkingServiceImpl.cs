@@ -16,8 +16,9 @@ namespace projeto.domain.service.serviceImpl
 
         public List<Parking>? listVehicle()
         {
-            return (List<Parking>?)(repository?.GetVehicles()?.Select(item => item));
-            
+            #pragma warning disable CS8604 // Possible null reference argument.
+            return (repository?.GetVehicles()?.Select(item => item)).ToList();
+
         }
       
         public string removeVehicle(string plateCar, double pricePerHour)
