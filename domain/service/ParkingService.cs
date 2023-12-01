@@ -10,6 +10,6 @@ namespace projeto.domain.service
     {
         public string addVehicle(Parking parking);
         public void removeVehicle(string plateCar, double pricePerHour);
-        public List<Parking>? listVehicle();
+        public void listVehicle();
     }
 }

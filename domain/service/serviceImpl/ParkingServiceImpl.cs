@@ -15,11 +15,13 @@ namespace projeto.domain.service.serviceImpl
             return $"Car with plate {parking.GetPlateCar()} add success!";
         }
 
-        public List<Parking>? listVehicle()
+        public void listVehicle()
         {
             #pragma warning disable CS8604 // Possible null reference argument.
-            return (repository?.GetVehicles()?.Select(item => item)).ToList();
-
+            foreach (var vehicle in repository.GetVehicles().ToList())
+            {
+                Console.WriteLine(vehicle);
+            }
         }
       
         public void removeVehicle(string plateCar, double pricePerHour)

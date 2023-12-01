@@ -52,8 +52,7 @@ namespace projeto
 
                     case 3:
                     {
-                        var listVehicle = service.listVehicle();
-                        Console.WriteLine(listVehicle);
+                        service.listVehicle();
                         break;
                     }
 
