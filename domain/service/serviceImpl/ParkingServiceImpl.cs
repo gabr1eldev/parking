@@ -25,8 +25,7 @@ namespace projeto.domain.service.serviceImpl
         {
             #pragma warning disable CS8603 // Possible null reference return.
             return repository.GetVehicles().Select(vehicle => {
-                #pragma warning disable CS8602 // Dereference of a possibly null reference.
-                if (vehicle.GetPlateCar().Contains(plateCar))
+                if (string.Equals(vehicle.GetPlateCar(),plateCar))
                     {                     
                         double total = vehicle.GetPrice() * pricePerHour;
                         repository?.removeVehicle(vehicle);
