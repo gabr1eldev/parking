@@ -54,8 +54,8 @@ namespace projeto.domain.model
 
         public override string ToString()
         {
-            #pragma warning disable CS8603 // Possible null reference return.
-            return base.ToString();
+            
+            return $"Plate Car: {_plateCar} \nFixed Price: {_price}\n";
 
         }
 

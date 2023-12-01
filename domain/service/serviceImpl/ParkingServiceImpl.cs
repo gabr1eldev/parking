@@ -22,6 +22,7 @@ namespace projeto.domain.service.serviceImpl
             {
                 Console.WriteLine(vehicle);
             }
+            //return repository.GetVehicles().Select(vehicle => vehicle).ToList();
         }
       
         public void removeVehicle(string plateCar, double pricePerHour)
