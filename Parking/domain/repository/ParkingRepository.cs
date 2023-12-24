@@ -8,26 +8,26 @@ namespace projeto.domain.repository
 {
     public class ParkingRepository 
     {
-        private readonly List<Parking>? _vehicles = new();
+        private readonly List<ParkingDIO>? _vehicles = new();
 
         public ParkingRepository() {}
 
-        public ParkingRepository(List<Parking> vehicles) {
+        public ParkingRepository(List<ParkingDIO> vehicles) {
             this._vehicles = vehicles;
         }
 
 
-        public List<Parking>? GetVehicles() {       
+        public List<ParkingDIO>? GetVehicles() {       
             
             return this?._vehicles ?? null;        
         }
 
-        public void AddVehicle(Parking vehicle) {
+        public void AddVehicle(ParkingDIO vehicle) {
            this._vehicles?.Add(vehicle);
            
         }
 
-        public string removeVehicle(Parking parking) {
+        public string removeVehicle(ParkingDIO parking) {
             this._vehicles?.Remove(parking);
             return "Success remove";
         }

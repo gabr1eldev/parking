@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\projeto.csproj": {}
+    "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\Parking\\projeto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\projeto.csproj": {
+    "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\Parking\\projeto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\projeto.csproj",
+        "projectUniqueName": "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\Parking\\projeto.csproj",
         "projectName": "projeto",
-        "projectPath": "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\projeto.csproj",
+        "projectPath": "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\Parking\\projeto.csproj",
         "packagesPath": "C:\\Users\\ggreg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\obj\\",
+        "outputPath": "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\Parking\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

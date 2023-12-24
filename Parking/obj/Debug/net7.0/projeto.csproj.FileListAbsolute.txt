@@ -13,3 +13,11 @@ C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\obj\Debug\net7.0\refint\projeto.
 C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\obj\Debug\net7.0\projeto.pdb
 C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\obj\Debug\net7.0\projeto.genruntimeconfig.cache
 C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\obj\Debug\net7.0\ref\projeto.dll
+C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\Parking\obj\Debug\net7.0\projeto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\Parking\obj\Debug\net7.0\projeto.AssemblyInfoInputs.cache
+C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\Parking\obj\Debug\net7.0\projeto.AssemblyInfo.cs
+C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\Parking\obj\Debug\net7.0\projeto.csproj.CoreCompileInputs.cache
+C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\Parking\obj\Debug\net7.0\projeto.sourcelink.json
+C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\Parking\obj\Debug\net7.0\projeto.dll
+C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\Parking\obj\Debug\net7.0\refint\projeto.dll
+C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\Parking\obj\Debug\net7.0\projeto.pdb

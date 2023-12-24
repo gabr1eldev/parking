@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace projeto.domain.model
 {
-    public class Parking
+    public class ParkingDIO
     {
         private double _price;
         private double _pricePerHour;
 
         private string? _plateCar;
 
-        public Parking() { }
+        public ParkingDIO() { }
 
-        public Parking(double price, string plateCar)
+        public ParkingDIO(double price, string plateCar)
         {
             this._price = price;
             this._plateCar = plateCar;

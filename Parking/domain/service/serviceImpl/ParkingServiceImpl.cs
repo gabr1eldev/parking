@@ -1,18 +1,19 @@
-using System.Data;
-using projeto.domain.model;
 using projeto.domain.repository;
+using projeto.domain.model;
 
 namespace projeto.domain.service.serviceImpl
-{   
+{
     public class ParkingServiceImpl : ParkingService
     {
         
         ParkingRepository repository = new();
 
-        public string addVehicle(Parking parking)
+        public void addVehicle(ParkingDIO parking)
         {
+    
+
             repository?.AddVehicle(parking);
-            return $"Car with plate {parking.GetPlateCar()} add success!";
+             
         }
 
         public void listVehicle()
@@ -55,11 +56,5 @@ namespace projeto.domain.service.serviceImpl
             */
             }
         } 
-
-        private static Parking GetParking()
-        {
-            Parking parking = new();
-            return parking;
-        }
     }
 }
