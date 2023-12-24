@@ -17,6 +17,7 @@ namespace projeto.domain.service.serviceImpl
             if (parking.GetPrice() <= 0 || !parking.GetPrice().Equals(typeof(double))) 
             {
                 throw new DomainException("The price is incorrect");
+                
             } else if (parking.GetPlateCar() == null || !parking.GetPlateCar().Equals(typeof(string)))
             {
                 throw new DomainException("The plate car is incorrect!");
