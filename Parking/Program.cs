@@ -9,7 +9,7 @@ namespace projeto
         static void Main(string[] args)
         {
             ParkingServiceImpl service = new();
-            Parking parking = new();
+            ParkingDIO parking = new();
 
             Console.WriteLine("---------Wellcome to Parking!----------");
             Console.WriteLine("[1] - Add Plate");
@@ -33,8 +33,7 @@ namespace projeto
                         var plateCar = Console.ReadLine();
                         parking.SetPrice(fixedPrice);
                         parking.SetPlateCar(plateCar);
-                        var result = service.addVehicle(parking);
-                        Console.WriteLine(result);
+                        service.addVehicle(parking);
                         break;           
                                
                     }

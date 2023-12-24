@@ -1,5 +1,6 @@
 using projeto.domain.repository;
 using projeto.domain.model;
+using Parking.domain.exceptions;
 
 namespace projeto.domain.service.serviceImpl
 {
@@ -11,8 +12,16 @@ namespace projeto.domain.service.serviceImpl
         public void addVehicle(ParkingDIO parking)
         {
     
-
-            repository?.AddVehicle(parking);
+            #pragma warning disable CS8602 // Dereference of a possibly null reference.
+            if(parking == null || !parking.GetPlateCar().Equals(typeof(string))) 
+            {
+                throw new DomainException("Error! Can not be added.");
+            } else 
+            {
+                repository?.AddVehicle(parking);
+            }
+            #pragma warning restore CS8602 // Dereference of a possibly null reference.
+            
              
         }
 
