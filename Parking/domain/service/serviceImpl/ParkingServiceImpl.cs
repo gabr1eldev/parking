@@ -14,10 +14,10 @@ namespace projeto.domain.service.serviceImpl
         {
     
             #pragma warning disable CS8602 // Dereference of a possibly null reference.
-            if(parking.GetPrice() <= 0 || !parking.GetPrice().Equals(typeof(double))) 
+            if (parking.GetPrice() <= 0 || !parking.GetPrice().Equals(typeof(double))) 
             {
                 throw new DomainException("The price is incorrect");
-            } else if(parking.GetPlateCar() == null || !parking.GetPlateCar().Equals(typeof(string)))
+            } else if (parking.GetPlateCar() == null || !parking.GetPlateCar().Equals(typeof(string)))
             {
                 throw new DomainException("The plate car is incorrect!");
             } else 
@@ -32,7 +32,14 @@ namespace projeto.domain.service.serviceImpl
             #pragma warning disable CS8604 // Possible null reference argument.
             foreach (var vehicle in repository.GetVehicles().ToList())
             {
-                Console.WriteLine(vehicle);
+                if (vehicle == null)
+                {
+                    throw new DomainException("There is not vehicle in parking");
+                } else
+                {
+                    Console.WriteLine(vehicle);
+                }
+                
             }
             //return repository.GetVehicles().Select(vehicle => vehicle).ToList();
         }
