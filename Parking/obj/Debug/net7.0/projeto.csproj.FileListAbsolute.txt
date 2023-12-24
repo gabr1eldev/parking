@@ -21,3 +21,10 @@ C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\Parking\obj\Debug\net7.0\projeto
 C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\Parking\obj\Debug\net7.0\projeto.dll
 C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\Parking\obj\Debug\net7.0\refint\projeto.dll
 C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\Parking\obj\Debug\net7.0\projeto.pdb
+C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\Parking\bin\Debug\net7.0\projeto.exe
+C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\Parking\bin\Debug\net7.0\projeto.deps.json
+C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\Parking\bin\Debug\net7.0\projeto.runtimeconfig.json
+C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\Parking\bin\Debug\net7.0\projeto.dll
+C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\Parking\bin\Debug\net7.0\projeto.pdb
+C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\Parking\obj\Debug\net7.0\projeto.genruntimeconfig.cache
+C:\Users\ggreg\Documents\Estudos\DIO\C#\projeto\Parking\obj\Debug\net7.0\ref\projeto.dll

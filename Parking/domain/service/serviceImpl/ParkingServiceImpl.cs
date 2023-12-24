@@ -1,6 +1,7 @@
 using projeto.domain.repository;
 using projeto.domain.model;
 using Parking.domain.exceptions;
+using System.IO.Compression;
 
 namespace projeto.domain.service.serviceImpl
 {
@@ -13,16 +14,17 @@ namespace projeto.domain.service.serviceImpl
         {
     
             #pragma warning disable CS8602 // Dereference of a possibly null reference.
-            if(parking == null || !parking.GetPlateCar().Equals(typeof(string))) 
+            if(parking.GetPrice() <= 0 || !parking.GetPrice().Equals(typeof(double))) 
             {
-                throw new DomainException("Error! Can not be added.");
+                throw new DomainException("The price is incorrect");
+            } else if(parking.GetPlateCar() == null || !parking.GetPlateCar().Equals(typeof(string)))
+            {
+                throw new DomainException("The plate car is incorrect!");
             } else 
             {
                 repository?.AddVehicle(parking);
-            }
-            #pragma warning restore CS8602 // Dereference of a possibly null reference.
-            
-             
+                Console.WriteLine("Add success!");
+            }         
         }
 
         public void listVehicle()
