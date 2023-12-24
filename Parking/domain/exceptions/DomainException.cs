@@ -7,9 +7,6 @@ namespace Parking.domain.exceptions
 {
     public class DomainException : ApplicationException
     {
-        public DomainException(string msg ) : base(msg) 
-        {
-            
-        }
+        public DomainException(string msg ) : base(msg)  {}
     }
 }
