@@ -39,32 +39,37 @@ namespace projeto.domain.service.serviceImpl
       
         public void removeVehicle(string plateCar, double pricePerHour)
         {
-
-            #pragma warning disable CS8602 // Dereference of a possibly null reference.
-            foreach (var vehicle in repository.GetVehicles().ToList())
+            if(!plateCar.Equals(typeof(string)) || plateCar == null)
             {
-                if(vehicle.GetPlateCar().Equals(plateCar))
+                throw new DomainException("Wrong plate car");
+            } else if(!pricePerHour.Equals(typeof(double)) || pricePerHour <= 0)
+            {
+                throw new DomainException("Wrong price per hour.");
+            } else
+            {
+                #pragma warning disable CS8602 // Dereference of a possibly null reference.
+                foreach (var vehicle in repository.GetVehicles().ToList())
                 {
+                    
                     double total = vehicle.GetPrice() * pricePerHour;
                     repository?.removeVehicle(vehicle);
                     Console.WriteLine($"Total price is {total}");
-                } else {
-                    Console.WriteLine("Plate incorrect");
-                }
-            /*
-            #pragma warning disable CS8603 // Possible null reference return.
-            return repository.GetVehicles().Select(vehicle => {
-                Console.WriteLine(string.Equals(vehicle.GetPlateCar(),plateCar));
-                if (string.Equals(vehicle.GetPlateCar(),plateCar))
-                    {                     
-                        double total = vehicle.GetPrice() * pricePerHour;
-                        repository?.removeVehicle(vehicle);
-                        return $"Total price is {total}";
-                } else {
-                    return "Plate incorrect";
-                }
-            }).ToString();
-            */
+                   
+                    /*
+                    #pragma warning disable CS8603 // Possible null reference return.
+                    return repository.GetVehicles().Select(vehicle => {
+                        Console.WriteLine(string.Equals(vehicle.GetPlateCar(),plateCar));
+                        if (string.Equals(vehicle.GetPlateCar(),plateCar))
+                            {                     
+                                double total = vehicle.GetPrice() * pricePerHour;
+                                repository?.removeVehicle(vehicle);
+                                return $"Total price is {total}";
+                        } else {
+                            return "Plate incorrect";
+                        }
+                    }).ToString();
+                    */
+                }         
             }
         } 
     }
