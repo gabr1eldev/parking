@@ -1,5 +1,5 @@
-using projeto.domain.model;
-using projeto.domain.service.serviceImpl;
+using Parking.domain.model;
+using Parking.domain.service.serviceImpl;
 
 
 namespace projeto

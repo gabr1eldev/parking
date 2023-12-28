@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using projeto.domain.model;
+using Parking.domain.model;
 
-namespace projeto.domain.repository
+namespace Parking.domain.repository
 {
-    public class ParkingRepository 
+    public class ParkingRepository : IParkingRepository
     {
         private readonly List<ParkingDIO>? _vehicles = new();
 
@@ -27,7 +27,7 @@ namespace projeto.domain.repository
            
         }
 
-        public string removeVehicle(ParkingDIO parking) {
+        public string RemoveVehicle(ParkingDIO parking) {
             this._vehicles?.Remove(parking);
             return "Success remove";
         }

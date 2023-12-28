@@ -1,9 +1,9 @@
-using projeto.domain.repository;
-using projeto.domain.model;
+using Parking.domain.repository;
+using Parking.domain.model;
 using Parking.domain.exceptions;
 using System.IO.Compression;
 
-namespace projeto.domain.service.serviceImpl
+namespace Parking.domain.service.serviceImpl
 {
     public class ParkingServiceImpl : ParkingService
     {

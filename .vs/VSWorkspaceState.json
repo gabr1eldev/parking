@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Parking",
+    "\\ParkingTest",
+    "\\Parking\\domain",
+    "\\Parking\\domain\\repository"
+  ],
+  "SelectedNode": "\\Parking\\domain\\repository\\ParkingRepository.cs",
+  "PreviewInSolutionExplorer": false
+}

@@ -1712,6 +1712,16 @@
         "build": {
           "build/netcoreapp3.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "projeto/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/projeto.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/projeto.dll": {}
+        }
       }
     }
   },
@@ -5507,12 +5517,18 @@
         "xunit.runner.visualstudio.2.4.5.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "projeto/1.0.0": {
+      "type": "project",
+      "path": "../Parking/projeto.csproj",
+      "msbuildProject": "../Parking/projeto.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.NET.Test.Sdk >= 17.6.0",
       "coverlet.collector >= 6.0.0",
+      "projeto >= 1.0.0",
       "xunit >= 2.4.2",
       "xunit.runner.visualstudio >= 2.4.5"
     ]
@@ -5548,7 +5564,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\Parking\\projeto.csproj": {
+              "projectPath": "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\Parking\\projeto.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
