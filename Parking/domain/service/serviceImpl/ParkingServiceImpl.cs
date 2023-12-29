@@ -1,27 +1,35 @@
 using Parking.domain.repository;
 using Parking.domain.model;
 using Parking.domain.exceptions;
-using System.IO.Compression;
 
 namespace Parking.domain.service.serviceImpl
 {
     public class ParkingServiceImpl : ParkingService
     {
         
-        ParkingRepository repository = new();
+        private readonly ParkingRepository repository;
+
+        public ParkingServiceImpl()
+        {
+            this.repository = new ParkingRepository();
+        }
 
         public void addVehicle(ParkingDIO parking)
         {
     
             #pragma warning disable CS8602 // Dereference of a possibly null reference.
-            if (parking.GetPrice() <= 0 || !parking.GetPrice().Equals(typeof(double))) 
+            if (parking.GetPrice() <= 0) 
             {
-                throw new DomainException("The price is incorrect");
+                throw new DomainException("The price cant be zero or negative.");
                 
-            } else if (parking.GetPlateCar() == null || !parking.GetPlateCar().Equals(typeof(string)))
+            } 
+            else if (parking.GetPlateCar() == null 
+                || parking.GetPlateCar().Equals(typeof(int))
+                || parking.GetPlateCar().Equals(typeof(double)))
             {
                 throw new DomainException("The plate car is incorrect!");
-            } else 
+            } 
+            else 
             {
                 repository?.AddVehicle(parking);
                 Console.WriteLine("Add success!");
@@ -60,7 +68,7 @@ namespace Parking.domain.service.serviceImpl
                 {
                     
                     double total = vehicle.GetPrice() * pricePerHour;
-                    repository?.removeVehicle(vehicle);
+                    repository?.RemoveVehicle(vehicle);
                     Console.WriteLine($"Total price is {total}");
                    
                     /*

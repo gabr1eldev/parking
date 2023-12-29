@@ -3,9 +3,7 @@
     "",
     "\\Parking",
     "\\ParkingTest",
-    "\\Parking\\domain",
-    "\\Parking\\domain\\repository"
+    "\\ParkingTest\\domain\\services"
   ],
-  "SelectedNode": "\\Parking\\domain\\repository\\ParkingRepository.cs",
   "PreviewInSolutionExplorer": false
 }

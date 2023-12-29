@@ -1,7 +1,6 @@
 using Parking.domain.model;
 using Parking.domain.service.serviceImpl;
 
-
 namespace projeto
 {
     public class Program

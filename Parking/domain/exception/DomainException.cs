@@ -5,8 +5,10 @@ using System.Threading.Tasks;
 
 namespace Parking.domain.exceptions
 {
-    public class DomainException : ApplicationException
+    public class DomainException : Exception
     {
-        public DomainException(string msg ) : base(msg)  {}
+        public DomainException(string? message) : base(message)
+        {
+        }
     }
 }
