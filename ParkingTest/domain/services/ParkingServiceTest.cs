@@ -10,11 +10,13 @@ namespace ParkingTest.domain.services
     {
         ParkingRepository _repository;
         ParkingServiceImpl _service;
+        ParkingDIO _parking;
 
         public ParkingServiceTest() 
         {
             _repository = new ParkingRepository();
             _service = new ParkingServiceImpl();
+            _parking = new ParkingDIO();
         }
 
         [Theory(DisplayName = "Should save a car class")]
@@ -22,28 +24,33 @@ namespace ParkingTest.domain.services
         [InlineData(20, 30, "xjk-1019")]
         [InlineData(30, 25, "kjh-1920")]
         [InlineData(15, 25, "lmj-2981")]
-        public void saveCar(double price,double pricePerHour,string plateCar)
+        public void SaveCar(double price,double pricePerHour,string plateCar)
         {
-            ParkingDIO parking = new ParkingDIO(price, plateCar);
-            parking.SetPricePerHour(pricePerHour);
-            _service.addVehicle(parking);
+            _parking.SetPrice(price);
+            _parking.SetPricePerHour(pricePerHour);
+            _parking.SetPlateCar(plateCar);
+            _service.addVehicle(_parking);
 
             foreach (var result in _repository.GetVehicles())
             {
-                Assert.Equal(parking,result);
+                Assert.Equal(_parking,result);
             }          
         }
 
+        
 
         [Theory(DisplayName = "Should remove a car class")]
         [InlineData(5, 10, "xxx-1010")]
         [InlineData(20, 30, "xjk-1019")]
         [InlineData(30, 25, "kjh-1920")]
         [InlineData(15, 25, "lmj-2981")]
-        public void removeCar(double price, double pricePerHour, string plateCar)
+        public void RemoveCar(double price, double pricePerHour, string plateCar)
         {
-            ParkingDIO parking = new ParkingDIO(price, plateCar);
-            parking.SetPricePerHour(pricePerHour);
+            
+            _parking.SetPrice(price);
+            _parking.SetPricePerHour(pricePerHour);
+            _parking.SetPlateCar(plateCar);
+
             _service.removeVehicle(plateCar, pricePerHour);
 
             foreach (var result in _repository.GetVehicles())
@@ -51,6 +58,9 @@ namespace ParkingTest.domain.services
                 Assert.Empty((System.Collections.IEnumerable)result);
             }
         }
+
+
+       
 
     }
 }

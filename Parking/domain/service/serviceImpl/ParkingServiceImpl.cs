@@ -63,14 +63,15 @@ namespace Parking.domain.service.serviceImpl
                 #pragma warning disable CS8602 // Dereference of a possibly null reference.
                 foreach (var vehicle in repository.GetVehicles().ToList())
                 {       
-                    if(vehicle.GetPlateCar() != plateCar.ToUpper())
-                    {
-                        throw new DomainException("Wrong plate or the car its not exist"); 
-                    } else
+                    if(vehicle.GetPlateCar() == plateCar.ToUpper())
                     {
                         double total = vehicle.GetPrice() * pricePerHour;
                         repository?.RemoveVehicle(vehicle);
                         Console.WriteLine($"Total price is {total}");
+                        
+                    } else
+                    {
+                        throw new DomainException("Wrong plate or the car its not exist");
                     }
                     
                 }         
