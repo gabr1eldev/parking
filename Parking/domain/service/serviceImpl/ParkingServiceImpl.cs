@@ -60,7 +60,7 @@ namespace Parking.domain.service.serviceImpl
                 #pragma warning disable CS8602 // Dereference of a possibly null reference.
                 foreach (var vehicle in repository.GetVehicles().ToList())
                 {       
-                    if(vehicle.GetPlateCar() == plateCar.ToUpper())
+                    if(vehicle.GetPlateCar().ToUpper() == plateCar.ToUpper())
                     {
                         double total = vehicle.GetPrice() * pricePerHour;
                         repository?.RemoveVehicle(vehicle);

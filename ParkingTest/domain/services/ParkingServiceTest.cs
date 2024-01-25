@@ -41,23 +41,27 @@ namespace ParkingTest.domain.services
 
 
         [Theory(DisplayName = "Should remove a car class")]
-        [InlineData(5,10,"xxx-1010")]
-        [InlineData(20, 30, "xjk-1019")]
-        [InlineData(30, 25, "kjh-1920")]
-        [InlineData(15, 25, "lmj-2981")]
+        [InlineData(5,10,"XXX-1010")]
+        [InlineData(20, 30, "xxx-1019")]
+        [InlineData(30, 25, "lmj-1920")]
+        [InlineData(15, 25, "uyh-2981")]
         public void RemoveCar(double price, double pricePerHour, string plateCar)
         {
             
-            _parking.SetPrice(price);
-            _parking.SetPricePerHour(pricePerHour);
-            _parking.SetPlateCar(plateCar);
+            ParkingDIO parking = new ParkingDIO(price,pricePerHour,plateCar);
+            _service.addVehicle(parking);
 
-            _service.removeVehicle(plateCar, pricePerHour);
+            _service.removeVehicle(parking.GetPlateCar(), parking.GetPricePerHour());
+            var result = _repository.GetVehicles().Count;
+
+            Assert.Equal(0, result);
+            /*
 
             foreach (var result in _repository.GetVehicles())
             {
                 Assert.Empty((System.Collections.IEnumerable)result);
             }
+            */
         }
 
 

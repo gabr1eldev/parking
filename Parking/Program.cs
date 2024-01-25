@@ -40,7 +40,7 @@ namespace projeto
                     case 2:
                     {
                         Console.WriteLine("Plate car");
-                        var plateCar = Console.ReadLine();
+                        var plateCar = Console.ReadLine().ToUpper();
                         Console.WriteLine("Price per hour");
                         var pricePerHour = int.Parse(Console.ReadLine());
 
