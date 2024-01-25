@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\Parking\\projeto.csproj": {}
+    "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\Parking\\projeto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\Parking\\projeto.csproj": {
+    "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\Parking\\projeto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\Parking\\projeto.csproj",
+        "projectUniqueName": "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\Parking\\projeto.csproj",
         "projectName": "projeto",
-        "projectPath": "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\Parking\\projeto.csproj",
+        "projectPath": "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\Parking\\projeto.csproj",
         "packagesPath": "C:\\Users\\ggreg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\Parking\\obj\\",
+        "outputPath": "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\Parking\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\ggreg\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,19 +53,19 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
+              "version": "[7.0.15, 7.0.15]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[7.0.14, 7.0.14]"
+              "version": "[7.0.15, 7.0.15]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
+              "version": "[7.0.15, 7.0.15]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
+              "version": "[7.0.15, 7.0.15]"
             }
           ],
           "frameworkReferences": {
@@ -77,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -7,7 +7,7 @@ namespace Parking.domain.service.serviceImpl
     public class ParkingServiceImpl : ParkingService
     {
         
-        private readonly ParkingRepository repository;
+        private ParkingRepository repository;
 
         public ParkingServiceImpl()
         {

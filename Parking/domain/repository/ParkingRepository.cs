@@ -8,7 +8,7 @@ namespace Parking.domain.repository
 {
     public class ParkingRepository : IParkingRepository
     {
-        private readonly List<ParkingDIO>? _vehicles = new();
+        private List<ParkingDIO>? _vehicles = new();
 
         public ParkingRepository() {}
 

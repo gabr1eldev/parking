@@ -9,8 +9,8 @@
       "ParkingTest/1.0.0": {
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "17.6.0",
+          "Parking": "1.0.0",
           "coverlet.collector": "6.0.0",
-          "projeto": "1.0.0",
           "xunit": "2.4.2",
           "xunit.runner.visualstudio": "2.4.5"
         },
@@ -1021,9 +1021,9 @@
         }
       },
       "xunit.runner.visualstudio/2.4.5": {},
-      "projeto/1.0.0": {
+      "Parking/1.0.0": {
         "runtime": {
-          "projeto.dll": {}
+          "Parking.dll": {}
         }
       }
     }
@@ -1657,7 +1657,7 @@
       "path": "xunit.runner.visualstudio/2.4.5",
       "hashPath": "xunit.runner.visualstudio.2.4.5.nupkg.sha512"
     },
-    "projeto/1.0.0": {
+    "Parking/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

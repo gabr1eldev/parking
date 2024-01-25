@@ -19,6 +19,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Parking\projeto.csproj" />
+    <ProjectReference Include="..\Parking\Parking.csproj" />
   </ItemGroup>
 </Project>

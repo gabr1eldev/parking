@@ -1,0 +1,15 @@
+C:\Users\ggreg\Documents\estudos\DIO\parking\Parking\bin\Debug\net7.0\Parking.exe
+C:\Users\ggreg\Documents\estudos\DIO\parking\Parking\bin\Debug\net7.0\Parking.deps.json
+C:\Users\ggreg\Documents\estudos\DIO\parking\Parking\bin\Debug\net7.0\Parking.runtimeconfig.json
+C:\Users\ggreg\Documents\estudos\DIO\parking\Parking\bin\Debug\net7.0\Parking.dll
+C:\Users\ggreg\Documents\estudos\DIO\parking\Parking\bin\Debug\net7.0\Parking.pdb
+C:\Users\ggreg\Documents\estudos\DIO\parking\Parking\obj\Debug\net7.0\Parking.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ggreg\Documents\estudos\DIO\parking\Parking\obj\Debug\net7.0\Parking.AssemblyInfoInputs.cache
+C:\Users\ggreg\Documents\estudos\DIO\parking\Parking\obj\Debug\net7.0\Parking.AssemblyInfo.cs
+C:\Users\ggreg\Documents\estudos\DIO\parking\Parking\obj\Debug\net7.0\Parking.csproj.CoreCompileInputs.cache
+C:\Users\ggreg\Documents\estudos\DIO\parking\Parking\obj\Debug\net7.0\Parking.sourcelink.json
+C:\Users\ggreg\Documents\estudos\DIO\parking\Parking\obj\Debug\net7.0\Parking.dll
+C:\Users\ggreg\Documents\estudos\DIO\parking\Parking\obj\Debug\net7.0\refint\Parking.dll
+C:\Users\ggreg\Documents\estudos\DIO\parking\Parking\obj\Debug\net7.0\Parking.pdb
+C:\Users\ggreg\Documents\estudos\DIO\parking\Parking\obj\Debug\net7.0\Parking.genruntimeconfig.cache
+C:\Users\ggreg\Documents\estudos\DIO\parking\Parking\obj\Debug\net7.0\ref\Parking.dll

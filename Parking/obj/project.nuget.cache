@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4e/CzLEOYCGf811audIwG1dsS2Bsd/DOywYfAS9n9AqVUpyZaQp1a7aIZh2Et/HPdO5y/s9aDzQCKZQmSxGn1Q==",
+  "dgSpecHash": "kQ4bz2hLwCk8zqfdHZLqKszVZRL4NABkHTwn3E9+UaAnZ5xLiAjU6i4x+KyUn2lJIQtx3O7zA+6JJAsm4Ktjag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\Parking\\projeto.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\ggreg\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\ggreg\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\ggreg\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\ggreg\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\Parking\\Parking.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

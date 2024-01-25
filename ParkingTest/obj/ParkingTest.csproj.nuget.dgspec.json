@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\ParkingTest\\ParkingTest.csproj": {}
+    "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\ParkingTest\\ParkingTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\ParkingTest\\ParkingTest.csproj": {
+    "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\ParkingTest\\ParkingTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\ParkingTest\\ParkingTest.csproj",
+        "projectUniqueName": "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\ParkingTest\\ParkingTest.csproj",
         "projectName": "ParkingTest",
-        "projectPath": "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\ParkingTest\\ParkingTest.csproj",
+        "projectPath": "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\ParkingTest\\ParkingTest.csproj",
         "packagesPath": "C:\\Users\\ggreg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\ParkingTest\\obj\\",
+        "outputPath": "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\ParkingTest\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\ggreg\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\Parking\\projeto.csproj": {
-                "projectPath": "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\Parking\\projeto.csproj"
+              "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\Parking\\Parking.csproj": {
+                "projectPath": "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\Parking\\Parking.csproj"
               }
             }
           }
@@ -85,25 +81,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\Parking\\projeto.csproj": {
+    "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\Parking\\Parking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\Parking\\projeto.csproj",
-        "projectName": "projeto",
-        "projectPath": "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\Parking\\projeto.csproj",
+        "projectUniqueName": "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\Parking\\Parking.csproj",
+        "projectName": "Parking",
+        "projectPath": "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\Parking\\Parking.csproj",
         "packagesPath": "C:\\Users\\ggreg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\Parking\\obj\\",
+        "outputPath": "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\Parking\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\ggreg\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -139,30 +131,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[7.0.14, 7.0.14]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

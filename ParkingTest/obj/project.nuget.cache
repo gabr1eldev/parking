@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GVdhiDxa0XA7RiWuYfJnY3nZEr169LnkGsNFaGX3RjG0VVZ+zgjaW7EVuy71IFHH9pj74/QGp7SIvMyaYSbTdQ==",
+  "dgSpecHash": "MpVvyd7eoeaL69tVRxbqUWTqwBLmhGCXraIDExIwoPtV9vhzxw5j1F8kNKLgeH3JQdWfdNO4VRVt4ikN1fg32Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ggreg\\Documents\\Estudos\\DIO\\C#\\projeto\\ParkingTest\\ParkingTest.csproj",
+  "projectFilePath": "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\ParkingTest\\ParkingTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ggreg\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\ggreg\\.nuget\\packages\\microsoft.codecoverage\\17.6.0\\microsoft.codecoverage.17.6.0.nupkg.sha512",
