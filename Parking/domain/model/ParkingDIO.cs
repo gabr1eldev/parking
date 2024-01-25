@@ -22,6 +22,14 @@ namespace Parking.domain.model
 
         }
 
+        public ParkingDIO(double price,double pricePerHour, string plateCar)
+        {
+            this._price = price;
+            this._plateCar = plateCar;
+            this._pricePerHour = pricePerHour;
+
+        }
+
         public void SetPrice(double price)
         {
             this._price = price;

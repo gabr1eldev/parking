@@ -1,6 +1,7 @@
 using Parking.domain.repository;
 using Parking.domain.model;
 using Parking.domain.exceptions;
+using System.Collections.Immutable;
 
 namespace Parking.domain.service.serviceImpl
 {
@@ -18,9 +19,9 @@ namespace Parking.domain.service.serviceImpl
         {
     
             #pragma warning disable CS8602 // Dereference of a possibly null reference.
-            if (parking.GetPrice() <= 0) 
+            if (parking.GetPrice() < 1) 
             {
-                throw new DomainException("The price cant be zero or negative.");
+                throw new ArgumentException("The price cant be zero or negative.");
                 
             } 
             else if (parking.GetPlateCar() == null 
@@ -38,6 +39,7 @@ namespace Parking.domain.service.serviceImpl
 
         public void listVehicle()
         {
+            
             #pragma warning disable CS8604 // Possible null reference argument.
             foreach (var vehicle in repository.GetVehicles().ToList())
             {
@@ -50,6 +52,7 @@ namespace Parking.domain.service.serviceImpl
                 }
                 
             }
+            
             //return repository.GetVehicles().Select(vehicle => vehicle).ToList();
         }
       
