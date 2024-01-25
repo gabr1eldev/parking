@@ -1,7 +1,6 @@
 using Parking.domain.repository;
 using Parking.domain.model;
 using Parking.domain.exceptions;
-using System.Collections.Immutable;
 
 namespace Parking.domain.service.serviceImpl
 {
