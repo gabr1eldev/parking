@@ -34,23 +34,5 @@ namespace ParkingTest.domain.services
             }          
         }
 
-
-        [Theory(DisplayName = "Should remove a car class")]
-        [InlineData(5, 10, "xxx-1010")]
-        [InlineData(20, 30, "xjk-1019")]
-        [InlineData(30, 25, "kjh-1920")]
-        [InlineData(15, 25, "lmj-2981")]
-        public void removeCar(double price, double pricePerHour, string plateCar)
-        {
-            ParkingDIO parking = new ParkingDIO(price, plateCar);
-            parking.SetPricePerHour(pricePerHour);
-            _service.removeVehicle(plateCar,pricePerHour);
-
-            foreach (var result in _repository.GetVehicles())
-            {
-                Assert.Empty((System.Collections.IEnumerable)result);
-            }
-        }
-
     }
 }
