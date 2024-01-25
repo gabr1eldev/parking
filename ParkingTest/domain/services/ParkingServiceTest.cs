@@ -3,7 +3,6 @@ using Parking.domain.exceptions;
 using Parking.domain.model;
 using Parking.domain.repository;
 using Parking.domain.service.serviceImpl;
-using System.Diagnostics;
 
 namespace ParkingTest.domain.services
 {
@@ -62,7 +61,7 @@ namespace ParkingTest.domain.services
         }
 
 
-        [Theory(DisplayName = "Cant save a car with price < 1")]
+        [Theory(DisplayName = "Should impossible save a car with price < 1")]
         [InlineData(0, 10, "xxx-1010")]
         [InlineData(-1, 15, "xjk-1019")]
         [InlineData(-20, 20, "kjh-1920")]
@@ -79,7 +78,7 @@ namespace ParkingTest.domain.services
         }
 
 
-        [Theory(DisplayName = "Cant save a car with price < 1")]
+        [Theory(DisplayName = "should impossible save a car with price < 1")]
         [InlineData(10, -1, "xxx-1010")]
         [InlineData(15, 0, "xjk-1019")]
         [InlineData(1, -15, "kjh-1920")]
@@ -96,10 +95,18 @@ namespace ParkingTest.domain.services
         }
 
 
+        [Theory(DisplayName = "Should be impossible to remove a car with wrong plate")]
+        [InlineData(5, 10, "KKK-1010")]
+        public void CantRemoveCarWrongPlate(double price, double pricePerHour, string plateCar)
+        {
+
+            ParkingDIO remove = new ParkingDIO(price,pricePerHour,"XXXX");
+            _service.addVehicle(remove);
 
 
+            var message = Assert.Throws<DomainException>(() => _service.removeVehicle(plateCar, pricePerHour)).Message;
+            Assert.Equal("Wrong plate or the car its not exist.", message);
 
-
-
+        }
     }
 }

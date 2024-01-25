@@ -68,7 +68,7 @@ namespace Parking.domain.service.serviceImpl
                         
                     } else
                     {
-                        throw new DomainException("Wrong plate or the car its not exist");
+                        throw new DomainException("Wrong plate or the car its not exist.");
                     }
                     
                 }         
