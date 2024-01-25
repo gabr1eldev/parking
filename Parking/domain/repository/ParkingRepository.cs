@@ -12,24 +12,27 @@ namespace Parking.domain.repository
 
         public ParkingRepository() {}
 
-        public ParkingRepository(List<ParkingDIO> vehicles) {
+        public ParkingRepository(List<ParkingDIO> vehicles) 
+        {
             this._vehicles = vehicles;
         }
 
-
-        public List<ParkingDIO>? GetVehicles() {       
+        public List<ParkingDIO>? GetVehicles() 
+        {       
             
             return this?._vehicles ?? null;        
         }
 
-        public void AddVehicle(ParkingDIO vehicle) {
+        public void AddVehicle(ParkingDIO vehicle) 
+        {
            this._vehicles?.Add(vehicle);
            
         }
 
-        public string RemoveVehicle(ParkingDIO parking) {
+        public void RemoveVehicle(ParkingDIO parking) 
+        {
             this._vehicles?.Remove(parking);
-            return "Success remove";
+            
         }
     } 
 }

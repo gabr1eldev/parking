@@ -10,6 +10,6 @@ namespace Parking.domain.repository
     {
         public List<ParkingDIO>? GetVehicles();
         public void AddVehicle(ParkingDIO vehicle);
-        public string RemoveVehicle(ParkingDIO parking);
+        public void RemoveVehicle(ParkingDIO parking);
     }
 }
