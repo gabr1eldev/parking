@@ -44,7 +44,7 @@ namespace Parking.domain.model
 
         public void SetPlateCar(string placeCar)
         {
-            this._plateCar = placeCar;
+            this._plateCar = placeCar.ToUpper();
         }
 
         public string? GetPlateCar()

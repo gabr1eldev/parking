@@ -30,8 +30,7 @@ namespace Parking.domain.service.serviceImpl
                 throw new DomainException("The plate car is incorrect!");
             } 
             else 
-            {
-                parking.GetPlateCar().ToUpper();
+            {              
                 repository?.AddVehicle(parking);
                 Console.WriteLine("Add success!");
             }         
