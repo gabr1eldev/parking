@@ -21,14 +21,8 @@ namespace Parking.domain.service.serviceImpl
             #pragma warning disable CS8602 // Dereference of a possibly null reference.
             if (parking.GetPrice() < 1) 
             {
-                throw new ArgumentException("The price cant be zero or negative.");
+                throw new DomainException("The price cant be zero or negative.");
                 
-            } 
-            else if (parking.GetPlateCar() == null 
-                || parking.GetPlateCar().Equals(typeof(int))
-                || parking.GetPlateCar().Equals(typeof(double)))
-            {
-                throw new DomainException("The plate car is incorrect!");
             } 
             else 
             {              
@@ -58,7 +52,7 @@ namespace Parking.domain.service.serviceImpl
       
         public void removeVehicle(string plateCar, double pricePerHour)
         {
-            if(pricePerHour <= 0)
+            if(pricePerHour < 1)
             { 
                 throw new DomainException("Wrong price per hour.");
             } else
