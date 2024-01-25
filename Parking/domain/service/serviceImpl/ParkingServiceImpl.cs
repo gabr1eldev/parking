@@ -31,6 +31,7 @@ namespace Parking.domain.service.serviceImpl
             } 
             else 
             {
+                parking.GetPlateCar().ToUpper();
                 repository?.AddVehicle(parking);
                 Console.WriteLine("Add success!");
             }         
@@ -63,7 +64,7 @@ namespace Parking.domain.service.serviceImpl
                 #pragma warning disable CS8602 // Dereference of a possibly null reference.
                 foreach (var vehicle in repository.GetVehicles().ToList())
                 {       
-                    if(vehicle.GetPlateCar() != plateCar)
+                    if(vehicle.GetPlateCar() != plateCar.ToUpper())
                     {
                         throw new DomainException("Wrong plate or the car its not exist"); 
                     } else
