@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ggreg\\Desktop\\parking\\Parking\\Parking.csproj": {}
+    "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\Parking\\Parking.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ggreg\\Desktop\\parking\\Parking\\Parking.csproj": {
+    "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\Parking\\Parking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ggreg\\Desktop\\parking\\Parking\\Parking.csproj",
+        "projectUniqueName": "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\Parking\\Parking.csproj",
         "projectName": "Parking",
-        "projectPath": "C:\\Users\\ggreg\\Desktop\\parking\\Parking\\Parking.csproj",
+        "projectPath": "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\Parking\\Parking.csproj",
         "packagesPath": "C:\\Users\\ggreg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ggreg\\Desktop\\parking\\Parking\\obj\\",
+        "outputPath": "C:\\Users\\ggreg\\Documents\\estudos\\DIO\\parking\\Parking\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ggreg\\AppData\\Roaming\\NuGet\\NuGet.Config",
