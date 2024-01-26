@@ -101,6 +101,9 @@ namespace ParkingTest.domain.services
 
         [Theory(DisplayName = "Should be impossible to remove a car with wrong plate")]
         [InlineData(5, 10, "KKK-1010")]
+        [InlineData(5, 10, "KJK-1012")]
+        [InlineData(5, 10, "KLK-1234")]
+        [InlineData(5, 10, "KKP-1321")]
         public void CantRemoveCarWrongPlate(double price, double pricePerHour, string plateCar)
         {
 
