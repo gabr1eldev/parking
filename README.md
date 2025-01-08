@@ -1,4 +1,4 @@
-C# bootcamp project by <a href="https://dio.me">DIO</a>
+C#  project 
 
 <ul>
   <li>Software Architecture</li>
